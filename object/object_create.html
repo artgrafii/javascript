@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<script> 
+"use strict" 
+var o = {} ; 
+var arr = new Array() ; 
+var obj = Object.create(null) ; 
+
+Object.prototype.hello = function(){
+    alert('hello') ; 
+}
+
+Function.prototype.hello = function(){
+    alert("Function Hello") ; 
+}
+
+Array.hello() ; 
+
+//o.hello() ; 
+arr.prototype.hello2() ; 
+</script>
